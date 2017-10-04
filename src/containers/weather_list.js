@@ -1,12 +1,27 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
+//sparkline is the parent, sparkLinesLine is a child
+import { Sparklines, SparklinesLine } from 'react-sparklines';
+
 class WeatherList extends Component {
 	renderWeather(cityData) {
 		//to add a key in a React list, add it to the top level element in the list, and it must be a unique piece of data
+		
+		//each "main" object in the cityData JSON is assigned to the argument "weather"
+		//weather.main.temp is the temperature of the city at a point in time
+		//loop through these temperatures to generate the graph
+		const temps = cityData.list.map(weather => weather.main.temp)
+		console.log(temps);
+
 		return (
 			<tr key={cityData.city.name}>
 				<td>{cityData.city.name}</td>
+				<td>
+					<Sparklines height={120} width={180} data={temps}>
+						<SparklinesLine color ="red" />
+					</Sparklines>
+				</td>
 			</tr>
 		);
 	}
