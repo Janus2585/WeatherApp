@@ -1,25 +1,4 @@
-# ReduxSimpleStarter
+Deployed application can be viewed at https://weatherapp-janus2585.herokuapp.com/
 
-Interested in learning [Redux](https://www.udemy.com/react-redux/)?
+This application gives a 5 day weather forecast for any city in the United States. I used React.js, Redux and Sparklines to build it.
 
-### Getting Started
-
-There are two methods for getting started with this repo.
-
-#### Familiar with Git?
-Checkout this repo, install dependencies, then start the gulp process with the following:
-
-```
-> git clone https://github.com/StephenGrider/ReduxSimpleStarter.git
-> cd ReduxSimpleStarter
-> npm install
-> npm start
-```
-
-#### Not Familiar with Git?
-Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
-
-```
-> npm install
-> npm start
-```
