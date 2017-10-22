@@ -1,3 +1,8 @@
+body{
+	background-image:url(../img/white-background.jpg);
+	
+	background-size: 100% 100%;
+}
 .title {
 	font-size: 2em;
 	text-align: center;
