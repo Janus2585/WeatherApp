@@ -6,16 +6,23 @@ body{
 .title {
 	font-size: 2em;
 	text-align: center;
+	font-weight: bold;
 }
 
 .subtitle {
 	font-size: 1em;
 	text-align: center;
+	font-style: italic;
 }
 
 td, th {
 	vertical-align: middle !important;
 	text-align: center !important;
+	border: 0 !important;
+}
+
+table { 
+	border-collapse: collapse;
 }
 
 .input-group {
